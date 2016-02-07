@@ -11,6 +11,8 @@
 
 #define  YODA_API_ENDPOINT @"https://yoda.p.mashape.com"
 
+#define  MASHAPE_KEY @"Z9i3uJUihLmshcppfUbUmNF8sCDup107zggjsnQvNnDFswpOoW"
+
 #pragma mark Logging switches
 #define LOG_LIFECYCLE 1
 #define MYAPI_VERBOSE_LOGGING 0

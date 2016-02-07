@@ -26,25 +26,30 @@
     self = [super initWithBaseURL:url];
     
     if (self) {
-        self.responseSerializer = [AFJSONResponseSerializer serializer];
-        self.requestSerializer = [AFJSONRequestSerializer serializer];
+        self.responseSerializer = [AFHTTPResponseSerializer serializer];
+        self.requestSerializer = [AFHTTPRequestSerializer serializer];
+        [self.requestSerializer setValue:MASHAPE_KEY forHTTPHeaderField:@"X-Mashape-Key"];
+        [self.requestSerializer setValue:@"text/plain" forHTTPHeaderField:@"Accept"];
+    
     }
     
     return self;
 }
 
+
 - (void)fetchYodaText:(NSString *)text {
     NSMutableDictionary *parameters = @{
-                                        @"message":text
+                                        @"sentence":text
                                         }.mutableCopy;
     
     [self GET:@"yoda" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSString *responseString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         
         if ([self.delegate respondsToSelector:@selector(YodaController:didFetchYoda:)]) {
-            [self.delegate YodaController:self didFetchYoda:responseObject];
+            [self.delegate YodaController:self didFetchYoda:responseString];
         }
         
-        [[YodaModel sharedInstance] saveData:text yodaText:responseObject];
+        [[YodaModel sharedInstance] saveData:text yodaText:responseString];
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         if ([self.delegate respondsToSelector:@selector(YodaController:didFailWithError:)]) {
