@@ -7,10 +7,16 @@
 //
 
 #import "YodaSpokenListVC.h"
+#import "YodaSpokenListAdapter.h"
+#import "YodaSpoke.h"
 
 @interface YodaSpokenListVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSMutableArray *list;
+
+@property (nonatomic, strong) YodaSpokenListAdapter *listAdapter;
 
 @end
 
@@ -18,12 +24,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"Yoda Spoken History";
+    
+    [self populateLists];
+    self.listAdapter = [[YodaSpokenListAdapter alloc] init];
+    self.tableView.delegate = self.listAdapter;
+    self.tableView.dataSource = self.listAdapter;
+    self.listAdapter.tableView = self.tableView;
+    self.listAdapter.list = self.list;
+    [self.tableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
+}
+
+- (void)populateLists {
+    self.list = [[YodaSpoke all] mutableCopy];
+    self.list = [self sortByObjectDate:self.list];
+}
+
+- (NSMutableArray *)sortByObjectDate:(NSMutableArray *)array {
+    return [[array sortedArrayUsingComparator:^NSComparisonResult(YodaSpoke *first, YodaSpoke *second) {
+        
+        if ([first.date isBeforeDate:second.date]) {
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        
+        if ([first.date isAfterDate:second.date]) {
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        return (NSComparisonResult)NSOrderedSame;
+    }] mutableCopy];
 }
 
 /*

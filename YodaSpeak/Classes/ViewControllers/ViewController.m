@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YodaController.h"
+#import "YodaSpokenListVC.h"
 
 @interface ViewController () <YodaControllerDelegate>
 
@@ -84,7 +85,8 @@
 }
 
 - (void)listingButtonPress {
-    // TODO: Launch Listing VC
+    YodaSpokenListVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([YodaSpokenListVC class])];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark delegates
