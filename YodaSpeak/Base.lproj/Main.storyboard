@@ -58,12 +58,28 @@
                                         <color key="textColor" red="0.60392159219999997" green="0.0" blue="0.023529414089999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-X9-q0B" userLabel="progressBar">
+                                        <rect key="frame" x="255" y="390.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3J0-tE-iNb"/>
+                                            <constraint firstAttribute="width" constant="50" id="70A-f0-4eN"/>
+                                        </constraints>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Xdh-X9-q0B" firstAttribute="centerY" secondItem="PAK-YB-ZOL" secondAttribute="centerY" id="4Do-k1-Pbb"/>
                                     <constraint firstItem="TJJ-qn-yxi" firstAttribute="centerX" secondItem="PAK-YB-ZOL" secondAttribute="centerX" id="5c1-Re-eN1"/>
+                                    <constraint firstItem="Xdh-X9-q0B" firstAttribute="centerY" secondItem="ye4-bV-KZw" secondAttribute="centerY" id="9Vu-MJ-VsM"/>
+                                    <constraint firstItem="Xdh-X9-q0B" firstAttribute="centerX" secondItem="PAK-YB-ZOL" secondAttribute="centerX" id="Bfs-gj-6Bw"/>
                                     <constraint firstItem="ye4-bV-KZw" firstAttribute="top" secondItem="TJJ-qn-yxi" secondAttribute="bottom" constant="20" id="aTq-7f-xpk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Do-k1-Pbb"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoda_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="VsU-g3-8IJ" userLabel="topImage">
                                 <rect key="frame" x="20" y="64" width="560" height="214.5"/>
@@ -87,6 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="XzR-Fh-O75"/>
                     <connections>
+                        <outlet property="progressBar" destination="Xdh-X9-q0B" id="QjE-vX-1XC"/>
                         <outlet property="yodaResponseLabel" destination="ye4-bV-KZw" id="Ftn-Xq-7aj"/>
                     </connections>
                 </viewController>
