@@ -9,7 +9,7 @@
 #ifndef MysteryApplicationiOS_Common_h
 #define MysteryApplicationiOS_Common_h
 
-#define  YODA_API_ENDPOINT @"https://yoda.p.mashape.com/yoda"
+#define  YODA_API_ENDPOINT @"https://yoda.p.mashape.com"
 
 #pragma mark Logging switches
 #define LOG_LIFECYCLE 1
