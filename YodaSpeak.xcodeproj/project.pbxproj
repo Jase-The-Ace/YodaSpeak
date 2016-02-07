@@ -29,6 +29,9 @@
 		885B47091C670E8A00E8421D /* MyBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B47081C670E8A00E8421D /* MyBaseModel.m */; };
 		885B470C1C670E9A00E8421D /* YodaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B470B1C670E9A00E8421D /* YodaModel.m */; };
 		885B470F1C6717D600E8421D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B470E1C6717D600E8421D /* ViewController.m */; };
+		885B47111C672AAA00E8421D /* top_nav_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B47101C672AAA00E8421D /* top_nav_info@2x.png */; };
+		885B47141C672B1400E8421D /* YodaSpokenListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B47131C672B1400E8421D /* YodaSpokenListVC.m */; };
+		885B47181C672C0400E8421D /* YodaSpokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B47171C672C0400E8421D /* YodaSpokeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,11 @@
 		885B470B1C670E9A00E8421D /* YodaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaModel.m; sourceTree = "<group>"; };
 		885B470D1C6717D600E8421D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		885B470E1C6717D600E8421D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		885B47101C672AAA00E8421D /* top_nav_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_nav_info@2x.png"; sourceTree = "<group>"; };
+		885B47121C672B1400E8421D /* YodaSpokenListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YodaSpokenListVC.h; sourceTree = "<group>"; };
+		885B47131C672B1400E8421D /* YodaSpokenListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpokenListVC.m; sourceTree = "<group>"; };
+		885B47161C672C0400E8421D /* YodaSpokeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YodaSpokeCell.h; sourceTree = "<group>"; };
+		885B47171C672C0400E8421D /* YodaSpokeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpokeCell.m; sourceTree = "<group>"; };
 		95E32F5BF18866847BD264BD /* Pods-YodaSpeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YodaSpeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-YodaSpeak/Pods-YodaSpeak.release.xcconfig"; sourceTree = "<group>"; };
 		C483F2D59FC9ABC85B0F35D3 /* libPods-YodaSpeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YodaSpeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +258,7 @@
 		885B46D01C66EC8500E8421D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				885B47101C672AAA00E8421D /* top_nav_info@2x.png */,
 				885B46D11C66EC8500E8421D /* yoda_img@3x.png */,
 			);
 			path = Images;
@@ -312,6 +321,8 @@
 				885B46DB1C66FF1A00E8421D /* MYBaseViewController.m */,
 				885B470D1C6717D600E8421D /* ViewController.h */,
 				885B470E1C6717D600E8421D /* ViewController.m */,
+				885B47121C672B1400E8421D /* YodaSpokenListVC.h */,
+				885B47131C672B1400E8421D /* YodaSpokenListVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -319,8 +330,18 @@
 		885B46D91C66FE2900E8421D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				885B47151C672BE300E8421D /* TableCells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		885B47151C672BE300E8421D /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				885B47161C672C0400E8421D /* YodaSpokeCell.h */,
+				885B47171C672C0400E8421D /* YodaSpokeCell.m */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 		DDBFFC884B8C7080645B4666 /* Frameworks */ = {
@@ -444,6 +465,7 @@
 				885B46A91C66EA1700E8421D /* LaunchScreen.storyboard in Resources */,
 				885B46A61C66EA1700E8421D /* Assets.xcassets in Resources */,
 				885B46D21C66EC8500E8421D /* yoda_img@3x.png in Resources */,
+				885B47111C672AAA00E8421D /* top_nav_info@2x.png in Resources */,
 				885B46A11C66EA1700E8421D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,12 +548,14 @@
 				885B46F81C67034F00E8421D /* MYManagedObject.m in Sources */,
 				885B46F51C67031C00E8421D /* YodaSpeak.xcdatamodel in Sources */,
 				885B46E71C66FFEE00E8421D /* NSString+Helpers.m in Sources */,
+				885B47181C672C0400E8421D /* YodaSpokeCell.m in Sources */,
 				885B470F1C6717D600E8421D /* ViewController.m in Sources */,
 				885B46981C66EA1700E8421D /* main.m in Sources */,
 				885B46DC1C66FF1A00E8421D /* MYBaseViewController.m in Sources */,
 				885B46FD1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m in Sources */,
 				885B46E61C66FFEE00E8421D /* NSDate+Helpers.m in Sources */,
 				885B47061C670CAE00E8421D /* YodaController.m in Sources */,
+				885B47141C672B1400E8421D /* YodaSpokenListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
