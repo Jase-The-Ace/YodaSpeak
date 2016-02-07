@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="MyManagedObject" representedClassName="MYManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="dirty" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="persistent" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="YodaSpoke" representedClassName="YodaSpoke" parentEntity="MyManagedObject" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yodaText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MyManagedObject" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="YodaSpoke" positionX="-54" positionY="18" width="128" height="90"/>
+    </elements>
+</model>

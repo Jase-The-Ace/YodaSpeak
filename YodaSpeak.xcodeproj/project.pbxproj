@@ -12,15 +12,20 @@
 		885B469B1C66EA1700E8421D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B469A1C66EA1700E8421D /* AppDelegate.m */; };
 		885B469E1C66EA1700E8421D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B469D1C66EA1700E8421D /* ViewController.m */; };
 		885B46A11C66EA1700E8421D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885B469F1C66EA1700E8421D /* Main.storyboard */; };
-		885B46A41C66EA1700E8421D /* YodaSpeak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 885B46A21C66EA1700E8421D /* YodaSpeak.xcdatamodeld */; };
 		885B46A61C66EA1700E8421D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885B46A51C66EA1700E8421D /* Assets.xcassets */; };
 		885B46A91C66EA1700E8421D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885B46A71C66EA1700E8421D /* LaunchScreen.storyboard */; };
 		885B46B41C66EA1700E8421D /* YodaSpeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46B31C66EA1700E8421D /* YodaSpeakTests.m */; };
 		885B46BF1C66EA1700E8421D /* YodaSpeakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46BE1C66EA1700E8421D /* YodaSpeakUITests.m */; };
 		885B46D21C66EC8500E8421D /* yoda_img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B46D11C66EC8500E8421D /* yoda_img@3x.png */; };
+		885B46DC1C66FF1A00E8421D /* MYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46DB1C66FF1A00E8421D /* MYBaseViewController.m */; };
 		885B46E51C66FFEE00E8421D /* MYStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46E01C66FFEE00E8421D /* MYStyleSheet.m */; };
 		885B46E61C66FFEE00E8421D /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46E21C66FFEE00E8421D /* NSDate+Helpers.m */; };
 		885B46E71C66FFEE00E8421D /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46E41C66FFEE00E8421D /* NSString+Helpers.m */; };
+		885B46EA1C67001100E8421D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46E91C67001100E8421D /* CoreDataManager.m */; };
+		885B46F51C67031C00E8421D /* YodaSpeak.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 885B46F41C67031C00E8421D /* YodaSpeak.xcdatamodel */; };
+		885B46F81C67034F00E8421D /* MYManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46F71C67034F00E8421D /* MYManagedObject.m */; };
+		885B46FD1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46FA1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m */; };
+		885B46FE1C67040B00E8421D /* YodaSpoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B46FC1C67040B00E8421D /* YodaSpoke.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,6 @@
 		885B469C1C66EA1700E8421D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		885B469D1C66EA1700E8421D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		885B46A01C66EA1700E8421D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		885B46A31C66EA1700E8421D /* YodaSpeak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YodaSpeak.xcdatamodel; sourceTree = "<group>"; };
 		885B46A51C66EA1700E8421D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885B46A81C66EA1700E8421D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885B46AA1C66EA1700E8421D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		885B46BE1C66EA1700E8421D /* YodaSpeakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YodaSpeakUITests.m; sourceTree = "<group>"; };
 		885B46C01C66EA1700E8421D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885B46D11C66EC8500E8421D /* yoda_img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yoda_img@3x.png"; sourceTree = "<group>"; };
+		885B46DA1C66FF1A00E8421D /* MYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBaseViewController.h; sourceTree = "<group>"; };
+		885B46DB1C66FF1A00E8421D /* MYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBaseViewController.m; sourceTree = "<group>"; };
 		885B46DD1C66FF6500E8421D /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		885B46DE1C66FFEE00E8421D /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
 		885B46DF1C66FFEE00E8421D /* MYStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStyleSheet.h; sourceTree = "<group>"; };
@@ -68,10 +74,19 @@
 		885B46E21C66FFEE00E8421D /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
 		885B46E31C66FFEE00E8421D /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
 		885B46E41C66FFEE00E8421D /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
+		885B46E81C67001100E8421D /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		885B46E91C67001100E8421D /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		885B46EC1C67026E00E8421D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		885B46EE1C67027800E8421D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		885B46F01C67028100E8421D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		885B46F21C67028900E8421D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		885B46F41C67031C00E8421D /* YodaSpeak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YodaSpeak.xcdatamodel; sourceTree = "<group>"; };
+		885B46F61C67034F00E8421D /* MYManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYManagedObject.h; sourceTree = "<group>"; };
+		885B46F71C67034F00E8421D /* MYManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYManagedObject.m; sourceTree = "<group>"; };
+		885B46F91C67040B00E8421D /* YodaSpoke+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YodaSpoke+CoreDataProperties.h"; sourceTree = "<group>"; };
+		885B46FA1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YodaSpoke+CoreDataProperties.m"; sourceTree = "<group>"; };
+		885B46FB1C67040B00E8421D /* YodaSpoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YodaSpoke.h; sourceTree = "<group>"; };
+		885B46FC1C67040B00E8421D /* YodaSpoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpoke.m; sourceTree = "<group>"; };
 		885B46FF1C67068E00E8421D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		95E32F5BF18866847BD264BD /* Pods-YodaSpeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YodaSpeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-YodaSpeak/Pods-YodaSpeak.release.xcconfig"; sourceTree = "<group>"; };
 		C483F2D59FC9ABC85B0F35D3 /* libPods-YodaSpeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YodaSpeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +229,13 @@
 		885B46CF1C66EC8500E8421D /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				885B46F61C67034F00E8421D /* MYManagedObject.h */,
+				885B46F71C67034F00E8421D /* MYManagedObject.m */,
+				885B46F41C67031C00E8421D /* YodaSpeak.xcdatamodel */,
+				885B46F91C67040B00E8421D /* YodaSpoke+CoreDataProperties.h */,
+				885B46FA1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m */,
+				885B46FB1C67040B00E8421D /* YodaSpoke.h */,
+				885B46FC1C67040B00E8421D /* YodaSpoke.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -481,11 +503,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				885B469E1C66EA1700E8421D /* ViewController.m in Sources */,
+				885B46FE1C67040B00E8421D /* YodaSpoke.m in Sources */,
 				885B46E51C66FFEE00E8421D /* MYStyleSheet.m in Sources */,
 				885B469B1C66EA1700E8421D /* AppDelegate.m in Sources */,
+				885B46EA1C67001100E8421D /* CoreDataManager.m in Sources */,
+				885B46F81C67034F00E8421D /* MYManagedObject.m in Sources */,
+				885B46F51C67031C00E8421D /* YodaSpeak.xcdatamodel in Sources */,
 				885B46E71C66FFEE00E8421D /* NSString+Helpers.m in Sources */,
 				885B46981C66EA1700E8421D /* main.m in Sources */,
-				885B46A41C66EA1700E8421D /* YodaSpeak.xcdatamodeld in Sources */,
+				885B46DC1C66FF1A00E8421D /* MYBaseViewController.m in Sources */,
+				885B46FD1C67040B00E8421D /* YodaSpoke+CoreDataProperties.m in Sources */,
 				885B46E61C66FFEE00E8421D /* NSDate+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
