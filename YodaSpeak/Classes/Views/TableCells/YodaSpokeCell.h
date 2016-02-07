@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface YodaSpokeCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *text;
+@property (weak, nonatomic) IBOutlet UILabel *yodaText;
 
 @end

@@ -25,6 +25,7 @@
 - (NSDate *)beginningOfWeek;
 - (NSDate *)endOfWeek;
 - (NSDate *)lastWeek;
+- (NSString *)formattedDate:(NSString *)format;
 + (NSString *)hoursAndMinutesStringFromMinutes:(unsigned)numMinutes;
 
 @end

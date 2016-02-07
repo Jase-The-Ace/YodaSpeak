@@ -32,6 +32,7 @@
 		885B47111C672AAA00E8421D /* top_nav_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885B47101C672AAA00E8421D /* top_nav_info@2x.png */; };
 		885B47141C672B1400E8421D /* YodaSpokenListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B47131C672B1400E8421D /* YodaSpokenListVC.m */; };
 		885B47181C672C0400E8421D /* YodaSpokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B47171C672C0400E8421D /* YodaSpokeCell.m */; };
+		885B471B1C672F6500E8421D /* YodaSpokenListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 885B471A1C672F6500E8421D /* YodaSpokenListAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		885B47131C672B1400E8421D /* YodaSpokenListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpokenListVC.m; sourceTree = "<group>"; };
 		885B47161C672C0400E8421D /* YodaSpokeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YodaSpokeCell.h; sourceTree = "<group>"; };
 		885B47171C672C0400E8421D /* YodaSpokeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpokeCell.m; sourceTree = "<group>"; };
+		885B47191C672F6500E8421D /* YodaSpokenListAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YodaSpokenListAdapter.h; sourceTree = "<group>"; };
+		885B471A1C672F6500E8421D /* YodaSpokenListAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YodaSpokenListAdapter.m; sourceTree = "<group>"; };
 		95E32F5BF18866847BD264BD /* Pods-YodaSpeak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YodaSpeak.release.xcconfig"; path = "Pods/Target Support Files/Pods-YodaSpeak/Pods-YodaSpeak.release.xcconfig"; sourceTree = "<group>"; };
 		C483F2D59FC9ABC85B0F35D3 /* libPods-YodaSpeak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YodaSpeak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -267,6 +270,8 @@
 		885B46D31C66FE2900E8421D /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				885B47191C672F6500E8421D /* YodaSpokenListAdapter.h */,
+				885B471A1C672F6500E8421D /* YodaSpokenListAdapter.m */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -545,6 +550,7 @@
 				885B46E51C66FFEE00E8421D /* MYStyleSheet.m in Sources */,
 				885B469B1C66EA1700E8421D /* AppDelegate.m in Sources */,
 				885B46EA1C67001100E8421D /* CoreDataManager.m in Sources */,
+				885B471B1C672F6500E8421D /* YodaSpokenListAdapter.m in Sources */,
 				885B46F81C67034F00E8421D /* MYManagedObject.m in Sources */,
 				885B46F51C67031C00E8421D /* YodaSpeak.xcdatamodel in Sources */,
 				885B46E71C66FFEE00E8421D /* NSString+Helpers.m in Sources */,

@@ -178,6 +178,12 @@
     return lastWeek;
 }
 
+- (NSString *)formattedDate:(NSString *)format {
+    NSDateFormatter* df = [[NSDateFormatter alloc] init];
+    df.dateFormat = format;
+    return [df stringFromDate:self];
+}
+
 + (NSString *)hoursAndMinutesStringFromMinutes:(unsigned)numMinutes {
     return numMinutes > 60
     ? [NSString stringWithFormat:@"%u hr %u min", (numMinutes - numMinutes % 60)/60, numMinutes % 60]
